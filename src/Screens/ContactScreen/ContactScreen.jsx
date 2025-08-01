@@ -2,8 +2,10 @@ import React, { useState} from 'react';
 import ContactList from  '../../Components/ContactList/ContactList';
 import { getContactList } from '../../Services/contactService';
 import { getContactById } from '../../Services/contactService'
+import {Search, MessageSquareMore} from 'lucide-react'
+import './ContactScreen.css'
 
-const contacts =[
+const staticContacts =[
     {
         id: 1,
         name: 'Harry',
@@ -29,11 +31,19 @@ const contacts =[
 const ContactScreen = () => {
     const contacts =  getContactList()
 
-  const [contactsState, setContactsState] = useState(contacts);
+  const [contactsState, setContactsState] = useState(staticContacts);
     
   return (
-        <div>
+        <div className="contact-screen">
+         <div className="contact-list-container">   
+        <div className="contact-header">
+            <h2 className="contact-title">WhatsApp</h2>
+            <div className="contact-icons"><Search className="icon"/><MessageSquareMore className="icon"/>
+            </div>
+            </div>
+       
             <ContactList contacts={contactsState} />
+        </div>
         </div>
     );
 };

@@ -7,8 +7,8 @@ const ContactItem = ({ contact }) => {
      <Link to={`/contact/${contact.id}/messages`}className="contact-item">   
       <h2>{contact.name}</h2>
       <img src= {contact.avatar} alt={contact.name}className="avatar" width={100} />
-      <span className="contact-last-connection">Ayer{contact.lastConnection}</span>
-      <span className="contact-connection-status">Desconectado {contact.connectionSrtatus}</span>
+      <span className="contact-lastConnection">Ayer{contact.lastConnection}</span>
+      <span className="contact-connectionStatus">Desconectado {contact.connectionStatus}</span>
 
     </Link>
   );
