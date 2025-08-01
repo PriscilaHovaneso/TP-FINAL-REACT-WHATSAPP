@@ -1,0 +1,42 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  transition: background 0.2s;
+}
+
+.contact-item:hover {
+  background-color: #f2f2f2;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+  object-fit: cover;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-name {
+  margin: 0;
+  font-weight: bold;
+  color: #000;
+}
+
+.contact-status {
+  font-size: 14px;
+  color: #888;
+}
+
+.last-connection {
+  font-size: 12px;
+  color: #aaa;
+}
+
