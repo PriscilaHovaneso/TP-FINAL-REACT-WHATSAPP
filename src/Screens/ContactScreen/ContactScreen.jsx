@@ -40,7 +40,7 @@ const ContactScreen = () => {
         <div className="contact-header">
             <h2 className="contact-title">WhatsApp</h2>
             <div className ="search-bar">
-                <span clssName="search-icon"><FaSearch/></span>
+                <span className="search-icon"><FaSearch/></span>
                 <input type="text" placeholder="Buscar un chat o iniciar uno nuevo" className="search-input"/>
             </div>
             <div className="contact-icons"><MessageSquareMore className="icon"/>

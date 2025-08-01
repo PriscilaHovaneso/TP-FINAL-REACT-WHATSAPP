@@ -50,7 +50,10 @@
 
 .search-bar {
     position: relative;
-    width: 100%;
+    width: 80%;
+    margin-top: 1px;
+    border-radius: 20px;
+    padding: 7px;
     margin-top: 1px;
 }
 
@@ -66,8 +69,10 @@
 .search-input {
     width: 100%;
     padding: 10px 10px 10px 36px;
-    border-radius: 8px;
+    border-radius: 20px;
     border: 1px solid #ccc;
     outline: none;
     background-color: #f0f0f0;
+    font-size: 14px;
+    box-sizing: border-box;
 }
