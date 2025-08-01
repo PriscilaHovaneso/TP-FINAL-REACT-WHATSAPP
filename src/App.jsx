@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import ContactScreen from './Screens/ContactScreen/ContactScreen'
 import ChatScreen from './Screens/ChatScreen/ChatScreen'
 import { Route, Routes} from 'react-router'
+import './styles/App.css';
 
 const App = () => {
   

@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router';
+import './ContactItem.css'
 
 const ContactItem = ({ contact }) => {
   return (
-     <Link to={`/contact/${contact.id}/messages`}>   
+     <Link to={`/contact/${contact.id}/messages`}className="contact-item">   
       <h2>{contact.name}</h2>
-      <img src= {contact.avatar} alt={contact.name} width={100} />
-      <span>Last Connection:{contact.lastConnection}</span>
-      <span>Connection Status: {contact.connectionSrtatus}</span>
+      <img src= {contact.avatar} alt={contact.name}className="avatar" width={100} />
+      <span className="contact-last-connection">Ayer{contact.lastConnection}</span>
+      <span className="contact-connection-status">Desconectado {contact.connectionSrtatus}</span>
 
     </Link>
   );
