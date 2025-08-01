@@ -1,8 +1,11 @@
 .contact-screen {
-    display:flex;
-    height: 100vh;
-    background-color: #f0f0f0;
-    padding: 20px;
+    width: 30%;
+    min-width: 250px;
+    max-width: 350px;
+    background-color: #f8f8f8;
+    border-right: 1px solid #ddd;
+    height: 100%;
+    
 }
 
 .contact-list-container {
@@ -32,4 +35,13 @@
     margin-left: 10px;
     cursor: pointer;
 
+}
+
+.contact-list {
+    width: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0.5rem;
+    box-sizing: none;
 }
