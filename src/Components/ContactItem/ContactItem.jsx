@@ -6,7 +6,7 @@ const ContactItem = ({ contact }) => {
   return (
      <Link to={`/contact/${contact.id}/messages`}className="contact-item">   
       <h2>{contact.name}</h2>
-      <img src= {contact.avatar} alt={contact.name}className="avatar" width={100} />
+      <img src= {contact.avatar} alt={`${contact.name}'s avatar`}className="avatar" width={100} />
       <span class="contact-lastConnection">Ayer{contact.lastConnection}</span>
       <span class="contact-connectionStatus">Desconectado {contact.connectionStatus}</span>
 
@@ -19,3 +19,4 @@ const ContactItem = ({ contact }) => {
 export default ContactItem;
 
 
+``
