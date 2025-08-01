@@ -4,6 +4,7 @@ import { getContactList } from '../../Services/contactService';
 import { getContactById } from '../../Services/contactService'
 import {Search, MessageSquareMore} from 'lucide-react'
 import './ContactScreen.css'
+import {FaSearch} from 'react-icons/fa'
 
 const staticContacts =[
     {
@@ -38,8 +39,13 @@ const ContactScreen = () => {
          <div className="contact-list-container">   
         <div className="contact-header">
             <h2 className="contact-title">WhatsApp</h2>
-            <div className="contact-icons"><Search className="icon"/><MessageSquareMore className="icon"/>
+            <div className ="search-bar">
+                <span clssName="search-icon"><FaSearch/></span>
+                <input type="text" placeholder="Buscar un chat o iniciar uno nuevo" className="search-input"/>
             </div>
+            <div className="contact-icons"><MessageSquareMore className="icon"/>
+            </div>
+            <div className="contact-list"></div>
             </div>
        
             <ContactList contacts={contactsState} />
